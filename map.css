@@ -1,0 +1,83 @@
+#map {
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    
+     
+}
+
+.popup {
+    text-align: center;
+    color: black;
+
+}
+
+.legend {
+    padding: 6px 8px;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    }
+    .legend div {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+    }
+    div.legend.leaflet-control br {
+    clear: both;
+    }
+
+.legend-image{
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Style for the story section */
+.story-section {
+    display: none;
+    background: white;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.4em;
+    width: 300px;
+    height: 400px;
+    overflow-y: auto;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.story-section img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit:fill;
+    margin-bottom: 10px;
+}
+
+/* Style for the image */
+#storyImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Style for the paragraph */
+.story-section p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .story-section {
+        width: 250px;
+        height: 350px;
+    }
+}

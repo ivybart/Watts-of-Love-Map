@@ -1,0 +1,119 @@
+body,html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+ 
+  /* Style the header */
+  .header {
+    padding: 5px;
+    text-align: center;
+    background: #333;
+    color: white;
+  }
+
+  .header-logo{
+    top: 20px;
+    left: 20px;
+    width: auto;
+    height: 50px;
+
+  }
+
+  /* Increase the font size of the h1 element 
+   .header h1 {
+    font-size: 40px;
+  }
+
+ 
+  /* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #171612 ;/* Dark background color */
+    
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right; /* Float a link to the right */
+    background-color: #E22726;
+  }
+  
+  /* Change color on hover/mouse-over */
+  .navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+  }
+
+  /* Ensure proper sizing */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Column container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Main column */
+  .main {
+    flex: 80%; /* Set the width of the main contentt */
+    background-color: white; /* White background color */
+    padding: 0px; /* Some padding */
+  }
+  
+  /* Side column */
+  .side {
+    flex: 20%; /* Set the width of the side bar */
+    background-color:#333; /* Grey background color */
+    padding: 0px; /* Some padding */
+  }
+
+  .footer {
+    padding: 10px;
+    text-align: center;
+    color: #f1f1f1;
+    background-color: #171612;
+  }
+
+  /* Remove background and border, center the content */
+.icon-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  cursor: pointer; /* Make it look like a button */
+  text-align: center;
+  font-size: 20px;
+  color: #f1f1f1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }

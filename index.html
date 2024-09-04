@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize</title>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="Assets/leaflet.curve.js"></script>
+</head>
+<body>
+    <!-- Create Header Section -->
+    <div class="header">
+        <img src="Assets/Name.png" alt="Watts of Love Logo" class="header-logo">
+        
+    </div>
+
+
+    <!--Create Navigation Bar-->
+    <div class="navbar">
+        <a href="https://www.wattsoflove.org/" target="_blank">Home</a>
+        <a href="https://www.wattsoflove.org/our-work" target="_blank">Our Work</a>
+        <a href="https://www.wattsoflove.org/get-involved/travel" target="_blank">Travel With Us</a>
+        <a href="https://funraise.org/give/Watts-of-Love/5b960fb8-7c16-4a20-a7fc-7570a73cbdbd/" target="_blank" class="right">DONATE</a>
+    </div>
+
+    <!--Create Content Section-->
+    <div class="row">
+        <!-- HTML -->
+    <div class="side">
+        <button id="loadMapBtn" class="icon-button">
+            <i class="fa fa-map" style="font-size:24px;color:#E22726;"></i>
+            <span class="button-text">Countries Impacted</span>
+        </button>
+        <button id="loadDestinations" class="icon-button">
+            <i class="fa fa-plane" style="font-size:24px;color:#E22726;"></i>
+            <span class="button-text">Future Trips</span>
+        <button id="loadStories" class="icon-button">
+            <i class="fa fa-sun-o" style="font-size:24px;color:#E22726;"></i>
+            <span class="button-text">Impact Stories</span>
+        </button>
+
+        <div id="storyLegend" class="story-section">
+            <img id="storyImage" src="Assets/Legend_Icon.png" alt= "Impact Story Image">
+            <p>Click on a point on the map to see the amazing story of some of our beneficiaries</p>
+            
+        </div>
+        </button>
+
+           
+    </div>
+  
+
+    <!-- Add map section-->
+        <div class="main">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <!--Create Footer Section-->
+    <div class="footer">
+        <h2>Help Us Bring Light To The World</h2>
+    </div>
+  
+    <!--Links to external scripts-->
+    <script src="index.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
