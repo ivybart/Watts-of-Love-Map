@@ -380,7 +380,7 @@ function updateStorySection(country, location, title, story, image) {
         <h3>${title}</h3>
         <p><strong>Country:</strong> ${country}</p>
         <p><strong>Location:</strong> ${location}</p>
-        <img src=${image} alt="Impact Story Image" style="width: 100%; height: auto;">
+        <img src="Assets/ANNETTE.png" alt="Impact Story Image" style="width: 100%; height: auto;">
         <p>${story}</p>
     `;
 }
